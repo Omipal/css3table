@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <title>Focus-within Pseudo Class</title>
+  <!-- <link rel="stylesheet" media="print" href="./print.css"> -->
+  <link rel="stylesheet" href="./style.css">
+  <style>
+
+
+@font-face {
+  font-family: openSans;
+  src: url('fonts/OpenSans-Regular-webfont.woff') format('woff');
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#table{
+  width: 800px;
+  border: 1px solid #000;
+  display: table;
+  margin: 0 auto;
+}
+.caption{
+  display: table-caption;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+#table-header{
+  display: table-header-group;
+  background-color: lightblue;
+  text-align: center;
+  font-weight: bold;
+}
+.row{
+  display: table-row;
+}
+#row-group{
+  display: table-row-group;
+
+}
+#table-colgroup{
+  display: table-column-group;
+}
+.table-col{
+  display: table-column;
+}
+.col-1{
+  background-color: yellowgreen
+
+}
+.col-2{
+  background-color: pink;
+  width: 400px;
+}
+.col-3{
+  background-color:lightblue;
+
+}
+
+.col{
+  display: table-cell;
+  border: 1px solid #000;
+  padding: 10px;
+}
+#table-footer{
+  display: table-footer-group;
+  background-color: lightgreen;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Display: Table</h1>
+<div id="table">
+  <div class="caption">Table Caption</div>
+  <div id="table-colgroup">
+    <div class="table-col col-1"></div>
+    <div class="table-col col-2"></div>
+    <div class="table-col col-3"></div>
+  </div>
+  <div id="table-header">
+    <div class="col">Roll No</div>
+    <div class="col">Student Name</div>
+    <div class="col">Age</div>
+  </div>
+<div id="row-group">
+  <div class="row">
+    <div class="col">1</div>
+    <div class="col">Yahoo Baba</div>
+    <div class="col">25</div>
+  </div>
+  <div class="row">
+    <div class="col" style="vertical-align: middle;">2</div>
+    <div class="col">Salman Khan Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo incidunt atque vitae, quisquam quas iure cupiditate mollitia modi suscipit debitis necessitatibus! Repellendus quos architecto, fugit aliquam deserunt atque incidunt!</div>
+    <div class="col">24</div>
+  </div>
+</div>
+<div id="table-footer">
+  <div class="col">Roll No</div>
+  <div class="col">Total Records:</div>
+  <div class="col">3</div>
+</div>
+</div>
+</body>
+</html>
